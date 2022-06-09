@@ -1,10 +1,15 @@
-export function makePet() {
+export function makePet(name, type, age, food, toys) {
     const pet = {
-        name: 'felix',
-        type: 'cat',
-        age: 6,
-        food: 'tuna',
-        toys: ['feather chaser', 'laser pointer', 'ball of yarn']
+        name,
+        type,
+        age,
+        food,
+        toys,
     };
     return pet;
 }
+
+export function formatWork(book) {
+
+}
+
