@@ -17,7 +17,7 @@ export function formatWork(data) {
     return book;
 }
 
-export function formatData(work, writer) {
+/*export function formatData(work, writer) {
     const names = writer.split(' '); 
     const last = names[0]; 
     const first = names[1]; 
@@ -31,6 +31,7 @@ export function formatData(work, writer) {
     };
     return author, book;
 }
+*/
 
 
 
