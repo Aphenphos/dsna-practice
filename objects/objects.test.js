@@ -1,4 +1,5 @@
 import {
+    formatData,
     formatWork,
     makePet
 } from './objects.js';
@@ -44,6 +45,26 @@ test('makes a book description', (expect) => {
         work: 'war of the worlds', 
         writer: 'h.g. wells' 
         
+    });
+
+});
+
+
+test('splits writer name and title', (expect) => {
+    const actual = formatData(
+        { 
+            work: 'war of the worlds', 
+            writer: 'h.g. wells' 
+        }
+    );
+    expect.deepEqual(actual, {
+        author: {
+            last: 'wells', 
+            first: 'h.g.'
+        },
+        book: {
+            title: 'war of the worlds', 
+        }
     });
 
 });
